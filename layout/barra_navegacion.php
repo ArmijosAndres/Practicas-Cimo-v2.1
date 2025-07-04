@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container px-5">
         <img src="<?php echo BASE_URL; ?>/assets/img/logocimo.ico" alt="Logo" class="navbar-logo">
         <a class="navbar-brand" href="<?php echo BASE_URL; ?>/index.php">Cimo</a>
@@ -28,7 +28,7 @@
                     </ul>
                 </li>
 
-                <li class="nav-item"><a class="nav-link" href="<?php echo BASE_URL; ?>/view/aplicaciones/aplicar_Bacante.php">Bolsa de Trabajo</a></li>
+                <li class="nav-item"><a class="nav-link" href="<?php echo BASE_URL; ?>/view/aplicaciones/aplicar_Bacante.php">Bolsa de Empleo</a></li>
 
                 <li class="nav-item"><a class="nav-link" href="<?php echo BASE_URL; ?>/view/noticias/noticias.php">Noticias</a></li>
 
@@ -47,9 +47,9 @@
                         // $socios = obtenerSociosDeLaBaseDeDatos();
                         // O para empezar, puedes hardcodear algunos:
                         $socios_ejemplo = [
-                            ['nombre_completo' => 'Nombre y Apellidos 1', 'url_perfil' => BASE_URL . '/view/socios/perfil_socio1.php'],
-                            ['nombre_completo' => 'Nombre y Apellidos 2', 'url_perfil' => BASE_URL . '/view/socios/perfil_socio2.php'],
-                            ['nombre_completo' => 'Nombre y Apellidos 3', 'url_perfil' => BASE_URL . '/view/socios/perfil_socio3.php'],
+                            ['nombre_completo' => 'Ing. Gabriel Encalada', 'url_perfil' => BASE_URL . '/view/socios/perfil_socio1.php'],
+                            ['nombre_completo' => 'Ing. Cristian Arias', 'url_perfil' => BASE_URL . '/view/socios/perfil_socio2.php'],
+                            ['nombre_completo' => 'Ing. Marlon Heranández', 'url_perfil' => BASE_URL . '/view/socios/perfil_socio3.php'],
                             // ... y así sucesivamente
                         ];
 
@@ -69,6 +69,8 @@
                 <li class="nav-item"><a class="nav-link" href="<?php echo BASE_URL; ?>/view/convenios/convenios.php">Convenios</a></li>
 
                 <li class="nav-item"><a class="nav-link" href="<?php echo BASE_URL; ?>/view/capacitaciones/capacitaciones.php">Capacitaciones</a></li>
+
+                <li class="nav-item"><a class="nav-link" href="<?php echo BASE_URL; ?>/view/Peritajes/peritajes.php">Peritajes</a></li>
 
                 <?php if (isset($_SESSION['usuario'])): ?>
                     <li class="nav-item dropdown">

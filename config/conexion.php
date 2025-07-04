@@ -10,18 +10,18 @@ class Conexion {
     public $conexion;
 
     public function __construct(){
-        // $datos = $this->datosConection();
-        // $this->host = $datos['conexion']['server'];
-        // $this->user = $datos['conexion']['user'];
-        // $this->password = $datos['conexion']['password'];
-        // $this->dbname = $datos['conexion']['database'];
-        // $this->port = $datos['conexion']['port'];
+         $datos = $this->datosConection();
+         $this->host = $datos['conexion']['server'];
+         $this->user = $datos['conexion']['user'];
+         $this->password = $datos['conexion']['password'];
+         $this->dbname = $datos['conexion']['database'];
+         $this->port = $datos['conexion']['port'];
 
-        // $this->conexion = new mysqli($this->host, $this->user, $this->password, $this->dbname, $this->port);
+         $this->conexion = new mysqli($this->host, $this->user, $this->password, $this->dbname, $this->port);
 
-        // if ($this->conexion->connect_error) {
-        //     die("Error al conectar a MySQL: " . $this->conexion->connect_error);
-        // }
+         if ($this->conexion->connect_error) {
+             die("Error al conectar a MySQL: " . $this->conexion->connect_error);
+         }
     }
 
     private function datosConection(){ 
@@ -40,14 +40,12 @@ class Conexion {
     }
 
     public function obtenerDatos($sqlstr){
-    //     $resultado = $this->conexion->query($sqlstr);
-    //     $resultadoArray = array();
-    //     while ($row = $resultado->fetch_assoc()) {
-    //         $resultadoArray[] = $row;
-    //     }
-    //     return $this->convertirUTF8($resultadoArray);
-    // }
-    return [];// Simulación de retorno vacío para evitar errores durante las prácticas
-    }
+         $resultado = $this->conexion->query($sqlstr);
+         $resultadoArray = array();
+         while ($row = $resultado->fetch_assoc()) {
+             $resultadoArray[] = $row;
+         }
+         return $this->convertirUTF8($resultadoArray);
+     }
 }
 ?>
