@@ -22,9 +22,9 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" id="navbarDropdownAfiliate" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Afíliate</a>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownAfiliate">
-                        <li><a class="dropdown-item" href="<?php echo BASE_URL; ?>/view/afiliate/beneficios.php">Beneficios</a></li>
-                        <li><a class="dropdown-item" href="<?php echo BASE_URL; ?>/view/afiliate/requisitos.php">Requisitos</a></li>
-                        <li><hr class="dropdown-divider"></li> <li><a class="dropdown-item" href="<?php echo BASE_URL; ?>/view/afiliate/pagar.php">Pagar</a></li>
+                        <li><a class="dropdown-item" href="<?php echo BASE_URL; ?>/view/cimo/afiliate/beneficios.php">Beneficios</a></li>
+                        <li><a class="dropdown-item" href="<?php echo BASE_URL; ?>/view/cimo/afiliate/requisitos.php">Requisitos</a></li>
+                        <li><hr class="dropdown-divider"></li> <li><a class="dropdown-item" href="<?php echo BASE_URL; ?>/view/cimo/afiliate/pagar.php">Pagar</a></li>
                     </ul>
                 </li>
 
@@ -50,7 +50,7 @@
 
                 <li class="nav-item"><a class="nav-link" href="<?php echo BASE_URL; ?>/view/capacitaciones/capacitaciones.php">Capacitaciones</a></li>
 
-                <li class="nav-item"><a class="nav-link" href="<?php echo BASE_URL; ?>/view/Peritajes/peritajes.php">Peritajes</a></li>
+                <li class="nav-item"><a class="nav-link" href="<?php echo BASE_URL; ?>/view/peritajes/peritajes.php">Peritajes</a></li>
 
                 <?php if (isset($_SESSION['usuario'])): ?>
                     <li class="nav-item dropdown">

@@ -1,3 +1,3 @@
 <?php 
-    define('BASE_URL', '/cimo2.0');
+    define('BASE_URL', 'http://localhost/programacion_php/cimo_v2.1-main');
 ?>
