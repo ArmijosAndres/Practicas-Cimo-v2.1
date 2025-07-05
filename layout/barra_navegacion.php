@@ -37,32 +37,12 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" id="navbarDropdownSocios" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Socios</a>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownSocios">
-                        <?php
-                        // ESTO ES UN EJEMPLO DE CÓDIGO PHP
-                        // NECESITARÁS UNA FUNCIÓN EN TU MODELO PARA OBTENER LOS SOCIOS
-                        // Y UN CONTROLADOR PARA PASARLOS A LA VISTA.
-                        // SI NO ESTÁS CONECTADO A DB, ESTO ES MÁS COMPLICADO.
-
-                        // Supongamos que tienes una función o array con socios
-                        // $socios = obtenerSociosDeLaBaseDeDatos();
-                        // O para empezar, puedes hardcodear algunos:
-                        $socios_ejemplo = [
-                            ['nombre_completo' => 'Ing. Gabriel Encalada', 'url_perfil' => BASE_URL . '/view/socios/perfil_socio1.php'],
-                            ['nombre_completo' => 'Ing. Cristian Arias', 'url_perfil' => BASE_URL . '/view/socios/perfil_socio2.php'],
-                            ['nombre_completo' => 'Ing. Marlon Heranández', 'url_perfil' => BASE_URL . '/view/socios/perfil_socio3.php'],
-                            // ... y así sucesivamente
-                        ];
-
-                        if (!empty($socios_ejemplo)) {
-                            foreach ($socios_ejemplo as $socio) {
-                                echo '<li><a class="dropdown-item" href="' . $socio['url_perfil'] . '">' . $socio['nombre_completo'] . '</a></li>';
-                            }
-                        } else {
-                            echo '<li><a class="dropdown-item" href="#">No hay socios disponibles</a></li>';
-                        }
-                        ?>
+                        <li><a class="dropdown-item" href="/view/socios/perfil_socio1.php">Ing. Gabriel Encalada</a></li>
+                        <li><a class="dropdown-item" href="/view/socios/perfil_socio2.php">Ing. Cristian Arias</a></li>
+                        <li><a class="dropdown-item" href="/view/socios/perfil_socio3.php">Ing. Marlon Heranández</a></li>
+                        
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="<?php echo BASE_URL; ?>/view/socios/listado_socios.php">Ver todos los socios</a></li>
+                        <li><a class="dropdown-item" href="https://cimo.com.ec/">Ver todos los socios</a></li>
                     </ul>
                 </li>
 
