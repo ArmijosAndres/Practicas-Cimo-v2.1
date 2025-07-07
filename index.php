@@ -28,9 +28,9 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         <!-- Navegacion CSS -->
-        <link href="css/navegacion.css" rel="stylesheet" />
+        <link href="programacion_php/cimo_v2.1-main/css/navegacion.css" rel="stylesheet" />
         <!-- Carrousel CSS -->
-        <link href="css/carrousel.css" rel="stylesheet" />
+        <link href="programacion_php/cimo_v2.1-main/css/carrousel.css" rel="stylesheet" />
          <!-- Font Awesome -->
          <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     </head>
