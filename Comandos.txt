@@ -1,0 +1,47 @@
+# Crear controladores por módulo
+php artisan make:controller Aplicaciones/AplicacionController --resource
+php artisan make:controller Aplicaciones/CapacitacionController
+php artisan make:controller Carrusel/CarruselController --resource
+php artisan make:controller Empleos/EmpleoController --resource
+php artisan make:controller Noticias/NoticiaController --resource
+php artisan make:controller Usuarios/UsuarioController --resource
+php artisan make:controller Cimo/CimoController
+php artisan make:controller Perfiles/PerfilController
+
+php artisan make:controller Auth/LoginController
+
+php artisan make:controller ContactoController
+php artisan make:controller Peritaje/PeritajeController --resource
+
+php artisan make:controller Cimo/AfiliateController
+
+# Crear modelos
+php artisan make:model Aplicacion -m
+php artisan make:model Carrusel -m
+php artisan make:model Empleo -m
+php artisan make:model Noticia -m
+php artisan make:model Capacitacion -m
+
+# Crear directorios para vistas
+mkdir -p resources/views/{aplicaciones,carrusel,empleos,noticias,usuarios,cimo,perfiles,layout}
+
+# Mover uploads
+mkdir -p public/uploads
+# Copiar archivos:
+cp -r /var/www/html/php/cimo_v2_1/uploads/* public/uploads/
+
+# Mover assets/img
+mkdir -p public/assets/img
+# Copiar archivos:
+cp -r /var/www/html/php/cimo_v2_1/assets/img/* public/assets/img
+cp -r /var/www/html/php/cimo_v2_1/css public/
+cp -r /var/www/html/php/cimo_v2_1/js public/
+
+# Crear controllador
+php artisan make:controller HomeController
+
+# Crear carpeta para comprobantes
+mkdir -p public/uploads/comprobantes
+
+# Dar permisos de escritura
+chmod -R 775 public/uploads/comprobantes

@@ -1,0 +1,44 @@
+app/
+  Http/
+    Controllers/
+      Aplicaciones/
+      Carrusel/
+      Empleos/
+      Noticias/
+      Usuarios/
+      Cimo/
+      Perfiles/
+  Models/
+    Aplicacion.php
+    Carrusel.php
+    Empleo.php
+    Noticia.php
+    Usuario.php
+  Services/ (opcional, para lógica compleja)
+resources/
+  views/
+    aplicaciones/
+    carrusel/
+    empleos/
+    noticias/
+    usuarios/
+    cimo/
+    perfiles/
+    layout/
+      plantilla.blade.php
+    components/
+      modal_aplicar.blade.php
+      modal_eliminar.blade.php
+      modal_exito.blade.php
+    partials/
+      barra_navegacion.blade.php
+      cabecera.blade.php
+      pie_pagina.blade.php
+public/
+  css/
+  js/
+  uploads/
+routes/
+  web.php
+database/
+  migrations/
