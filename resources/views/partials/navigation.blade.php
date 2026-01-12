@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark" role="navigation" aria-label="Navegación principal">
+<nav class="navbar navbar-expand-lg" role="navigation" aria-label="Navegación principal">
     <div class="container px-5">
         {{-- Logo y marca --}}
         <img 
@@ -146,27 +146,26 @@
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownSocios">
                         <li>
-                            <a class="dropdown-item" href="https://cimo.com.ec/" target="_blank" rel="noopener noreferrer">
+                            <a class="dropdown-item" target="_blank" rel="https://proyecto-vinculacion-eight.vercel.app/">
                                 Ing. Gabriel Encalada
                             </a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="https://cimo.com.ec/" target="_blank" rel="noopener noreferrer">
+                            <a class="dropdown-item" target="_blank" rel="https://proyecto-vinculacion-eight.vercel.app/">
                                 Ing. Cristian Arias
                             </a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="https://cimo.com.ec/" target="_blank" rel="noopener noreferrer">
+                            <a class="dropdown-item" target="_blank" rel="https://proyecto-vinculacion-eight.vercel.app/">
                                 Ing. Marlon Hernández
                             </a>
                         </li>
                         <li><hr class="dropdown-divider"></li>
                         <li>
                             <a 
-                                class="dropdown-item" 
-                                href="https://cimo.com.ec/" 
+                                class="dropdown-item"
                                 target="_blank"
-                                rel="noopener noreferrer"
+                                rel="https://proyecto-vinculacion-eight.vercel.app/"
                             >
                                 Ver todos los socios
                                 <i class="bi bi-box-arrow-up-right ms-1"></i>

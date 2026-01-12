@@ -3,3 +3,10 @@
     height: auto;
     margin-right: 10px; /* Espacio entre el logo y el texto */
   }
+
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: #1a5f2a; /* Color de fondo de la barra de navegación */
+    padding: 10px 20px;
+  }
