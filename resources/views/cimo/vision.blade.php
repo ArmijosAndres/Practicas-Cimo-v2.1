@@ -19,7 +19,7 @@
                         <div class="text-center mb-4">
                             <i class="bi bi-eye fs-1"></i>
                         </div>
-                        <p class="lead text-center mb-0">
+                        <p class="lead text-center mb-0" style="color: #0c0c0c;">
                             Ser una institución <strong>líder en la representación técnica y profesional</strong> 
                             de la ingeniería mecánica en el Ecuador, reconocida por nuestra excelencia, 
                             compromiso social y capacidad de innovación, con <strong>impacto nacional 

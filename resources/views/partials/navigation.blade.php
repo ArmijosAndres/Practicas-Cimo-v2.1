@@ -146,17 +146,17 @@
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownSocios">
                         <li>
-                            <a class="dropdown-item" target="_blank" rel="https://proyecto-vinculacion-eight.vercel.app/">
+                            <a class="dropdown-item" href="https://proyecto-vinculacion-eight.vercel.app/" target="_blank" rel="noopener noreferrer">
                                 Ing. Gabriel Encalada
                             </a>
                         </li>
                         <li>
-                            <a class="dropdown-item" target="_blank" rel="https://proyecto-vinculacion-eight.vercel.app/">
+                            <a class="dropdown-item" href="https://proyecto-vinculacion-eight.vercel.app/" target="_blank" rel="noopener noreferrer">
                                 Ing. Cristian Arias
                             </a>
                         </li>
                         <li>
-                            <a class="dropdown-item" target="_blank" rel="https://proyecto-vinculacion-eight.vercel.app/">
+                            <a class="dropdown-item" href="https://proyecto-vinculacion-eight.vercel.app/" target="_blank" rel="noopener noreferrer">
                                 Ing. Marlon Hernández
                             </a>
                         </li>
@@ -164,8 +164,9 @@
                         <li>
                             <a 
                                 class="dropdown-item"
+                                href="https://proyecto-vinculacion-eight.vercel.app/"
                                 target="_blank"
-                                rel="https://proyecto-vinculacion-eight.vercel.app/"
+                                rel="noopener noreferrer"
                             >
                                 Ver todos los socios
                                 <i class="bi bi-box-arrow-up-right ms-1"></i>
@@ -204,114 +205,111 @@
                     </a>
                 </li>
 
-                {{-- Menús de administración --}}
+                {{-- MENÚ ÚNICO DE ADMINISTRACIÓN --}}
                 @auth
-                    {{-- Administrar Noticias --}}
                     <li class="nav-item dropdown">
                         <a 
-                            class="nav-link dropdown-toggle" 
-                            id="navbarDropdownNoticia" 
+                            class="nav-link dropdown-toggle text-warning" 
+                            id="navbarDropdownAdmin" 
                             href="#" 
                             role="button" 
                             data-bs-toggle="dropdown" 
                             aria-expanded="false"
                         >
-                            Administrar Noticias
+                            <i class="bi bi-gear-fill me-1"></i>
+                            Administración
                         </a>
-                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownNoticia">
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownAdmin">
+                            {{-- Sección Noticias --}}
+                            <li>
+                                <h6 class="dropdown-header">
+                                    <i class="bi bi-newspaper me-1"></i>
+                                    Noticias
+                                </h6>
+                            </li>
                             <li>
                                 <a class="dropdown-item" href="{{ route('admin.noticias.index') }}">
+                                    <i class="bi bi-pencil-square me-2"></i>
                                     Crear/Editar Noticias
                                 </a>
                             </li>
-                        </ul>
-                    </li>
-
-                    {{-- Administrar Empleo --}}
-                    <li class="nav-item dropdown">
-                        <a 
-                            class="nav-link dropdown-toggle" 
-                            id="navbarDropdownEmpleoAdmin" 
-                            href="#" 
-                            role="button" 
-                            data-bs-toggle="dropdown" 
-                            aria-expanded="false"
-                        >
-                            Administrar Empleo
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownEmpleoAdmin">
+                            
+                            <li><hr class="dropdown-divider"></li>
+                            
+                            {{-- Sección Empleos --}}
+                            <li>
+                                <h6 class="dropdown-header">
+                                    <i class="bi bi-briefcase me-1"></i>
+                                    Empleos
+                                </h6>
+                            </li>
                             <li>
                                 <a class="dropdown-item" href="{{ route('admin.empleos.index') }}">
-                                    Crear Empleo
+                                    <i class="bi bi-plus-circle me-2"></i>
+                                    Gestionar Empleos
                                 </a>
                             </li>
                             <li>
                                 <a class="dropdown-item" href="{{ route('admin.aplicaciones.index') }}">
-                                    Administrar Aplicaciones
+                                    <i class="bi bi-file-earmark-person me-2"></i>
+                                    Ver Aplicaciones
                                 </a>
                             </li>
-                        </ul>
-                    </li>
-
-                    {{-- Administrar Usuarios --}}
-                    <li class="nav-item dropdown">
-                        <a 
-                            class="nav-link dropdown-toggle" 
-                            id="navbarDropdownUsuarios" 
-                            href="#" 
-                            role="button" 
-                            data-bs-toggle="dropdown" 
-                            aria-expanded="false"
-                        >
-                            Administrar Usuarios
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownUsuarios">
+                            
+                            <li><hr class="dropdown-divider"></li>
+                            
+                            {{-- Sección Usuarios --}}
+                            <li>
+                                <h6 class="dropdown-header">
+                                    <i class="bi bi-people me-1"></i>
+                                    Usuarios
+                                </h6>
+                            </li>
                             <li>
                                 <a class="dropdown-item" href="{{ route('admin.usuarios.index') }}">
+                                    <i class="bi bi-person-gear me-2"></i>
                                     Gestionar Usuarios
                                 </a>
                             </li>
-                        </ul>
-                    </li>
-
-                    {{-- Administrar Carrusel --}}
-                    <li class="nav-item dropdown">
-                        <a 
-                            class="nav-link dropdown-toggle" 
-                            id="navbarDropdownCarrusel" 
-                            href="#" 
-                            role="button" 
-                            data-bs-toggle="dropdown" 
-                            aria-expanded="false"
-                        >
-                            Administrar Carrusel
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownCarrusel">
+                            
+                            <li><hr class="dropdown-divider"></li>
+                            
+                            {{-- Sección Carrusel --}}
+                            <li>
+                                <h6 class="dropdown-header">
+                                    <i class="bi bi-images me-1"></i>
+                                    Carrusel
+                                </h6>
+                            </li>
                             <li>
                                 <a class="dropdown-item" href="{{ route('admin.carrusel.index') }}">
+                                    <i class="bi bi-image me-2"></i>
                                     Imágenes Carrusel
                                 </a>
                             </li>
+                            
+                            <li><hr class="dropdown-divider"></li>
+                            
+                            {{-- Cerrar Sesión --}}
+                            <li>
+                                <a 
+                                    class="dropdown-item text-danger" 
+                                    href="#" 
+                                    onclick="event.preventDefault(); document.getElementById('logout-form').submit();"
+                                >
+                                    <i class="bi bi-box-arrow-right me-2"></i>
+                                    Cerrar Sesión
+                                </a>
+                                <form 
+                                    id="logout-form" 
+                                    action="{{ route('logout') }}" 
+                                    method="POST" 
+                                    style="display: none;"
+                                >
+                                    @csrf
+                                </form>
+                            </li>
                         </ul>
-                    </li>
-
-                    {{-- Cerrar Sesión --}}
-                    <li class="nav-item">
-                        <a 
-                            class="nav-link" 
-                            href="#" 
-                            onclick="event.preventDefault(); document.getElementById('logout-form').submit();"
-                        >
-                            Cerrar Sesión
-                        </a>
-                        <form 
-                            id="logout-form" 
-                            action="{{ route('logout') }}" 
-                            method="POST" 
-                            style="display: none;"
-                        >
-                            @csrf
-                        </form>
                     </li>
                 @else
                     {{-- Login --}}
